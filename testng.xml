@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<listeners>
+    <listener class-name="Scenarios.Listener"></listener>
+</listeners>
+    <test verbose="2" preserve-order="true" name="Regresion">
+        <parameter name="Tester" value="Vivek"></parameter>
+        <groups>
+            <run>
+                <include name="CIR"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Scenarios.Test01">
+                <methods>
+<!--                    <include name="Test1"/>-->
+<!--                    <include name="Test2"/>-->
+<!--                    <include name="Test3"/>-->
+                </methods>
+            </class>
+            <class name="Scenarios.Test02">
+                <methods>
+<!--                    <include name="Test1"/>-->
+<!--                    <include name="Test2"/>-->
+<!--                    <include name="Test3"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
