@@ -24,7 +24,9 @@ public class Test02 {
     public void Test2() {
         System.out.println("Test-02-2");
     }
-    @Test(groups = {"CIR", "Regression"}, timeOut = 1000, retryAnalyzer = Retry.class)
+
+    // retryAnalyzer = Retry.class
+    @Test(groups = {"CIR", "Regression"}, timeOut = 1000)
     public void Test3() throws InterruptedException {
         System.out.println("Test-02-3");
         Thread.sleep(2000);
